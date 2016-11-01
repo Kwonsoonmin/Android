@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.quickcoding02.QuickCoding02">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is Your Number?"
+        android:id="@+id/question"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:width="600dp"
+        android:textSize="50dp"
+        android:textColor="#fb100f0f" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numbers"
+        android:background="#ffffff"
+        android:width="250dp"
+        android:height="100dp"
+        android:textSize="80dp"
+        android:singleLine="false"
+        android:textColor="#211d1d"
+        android:textColorHighlight="#1c1a1a"
+        android:textIsSelectable="false"
+        android:textColorLink="#252121"
+        android:layout_below="@+id/question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/send"
+        android:width="400dp"
+        android:layout_alignBottom="@+id/numbers"
+        android:layout_toRightOf="@+id/numbers"
+        android:layout_toEndOf="@+id/numbers"
+        android:layout_alignTop="@+id/numbers"
+        android:textSize="50dp"
+        android:height="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Number is"
+        android:id="@+id/computer"
+        android:width="400dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="50dp"
+        android:textColor="#211e1e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/send_num"
+        android:layout_toRightOf="@+id/computer"
+        android:layout_toEndOf="@+id/computer"
+        android:layout_alignTop="@+id/computer"
+        android:width="200dp"
+        android:height="60dp"
+        android:textColor="#1f1a1a"
+        android:textSize="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIGGER"
+        android:id="@+id/bigger"
+        android:layout_below="@+id/send_num"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp"
+        android:width="250dp"
+        android:textSize="50dp"
+        android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smaller"
+        android:id="@+id/smaller"
+        android:width="250dp"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/bigger"
+        android:layout_alignRight="@+id/send"
+        android:layout_alignEnd="@+id/send"
+        android:height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BINGO!"
+        android:id="@+id/bingo"
+        android:layout_below="@+id/bigger"
+        android:layout_centerHorizontal="true"
+        android:width="250dp"
+        android:height="100dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count: "
+        android:id="@+id/count"
+        android:layout_below="@+id/bingo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:width="300dp"
+        android:height="70dp"
+        android:textColor="#141212"
+        android:textSize="50dp"
+        android:layout_toLeftOf="@+id/bingo"
+        android:layout_toStartOf="@+id/bingo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/c_num"
+        android:width="200dp"
+        android:height="50dp"
+        android:textColor="#241f1f"
+        android:textSize="50dp"
+        android:layout_below="@+id/bingo"
+        android:layout_toRightOf="@+id/count"
+        android:layout_toEndOf="@+id/count" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Number is "
+        android:id="@+id/ShowMyNum"
+        android:layout_marginTop="295dp"
+        android:textColor="#0b0909"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/MyNum"
+        android:layout_alignBottom="@+id/ShowMyNum"
+        android:layout_toEndOf="@+id/computer"
+        android:textColor="#151414"
+        android:textSize="50dp"
+        android:layout_toRightOf="@+id/computer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+
+</RelativeLayout>

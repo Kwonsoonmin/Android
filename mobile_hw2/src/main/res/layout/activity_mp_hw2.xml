@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mobile_hw2.mp_hw2">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First"
+        android:id="@+id/First_B"
+        android:layout_marginBottom="209dp"
+        android:width="150dp"
+        android:layout_alignParentBottom="true"
+        android:height="100dp"
+        android:textSize="30dp"
+        android:textColor="#141eda" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third"
+        android:id="@+id/Third_B"
+        android:width="150dp"
+        android:height="100dp"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/Second_B"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#141eda" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second"
+        android:id="@+id/Second_B"
+        android:width="150dp"
+        android:height="100dp"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/First_B"
+        android:layout_centerHorizontal="true"
+        android:textColor="#141eda" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click!"
+        android:id="@+id/textview"
+        android:layout_marginTop="170dp"
+        android:width="300dp"
+        android:height="100dp"
+        android:textSize="50dp"
+        android:textColor="#1b9dda"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/layout"></RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a1k9s9_000.android.mp_hw1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="50dp"
+        android:textColor="#f806a8"
+        android:id="@+id/Start_txt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button_1"
+        android:id="@+id/Btn_1"
+        android:width="400dp"
+        android:height="70dp"
+        android:layout_above="@+id/Btn_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        android:textColor="#475cf6"
+        android:textSize="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button_2"
+        android:id="@+id/Btn_2"
+        android:width="400dp"
+        android:height="70dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@+id/Btn_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#37c468"
+        android:textSize="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button_3"
+        android:id="@+id/Btn_3"
+        android:width="400dp"
+        android:height="70dp"
+        android:layout_marginBottom="104dp"
+        android:textSize="40dp"
+        android:textColor="#cb72eb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Button."
+        android:id="@+id/Change"
+        android:width="300dp"
+        android:height="60dp"
+        android:textColor="#f01e1e"
+        android:textSize="40dp"
+        android:layout_above="@+id/Btn_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/Start_txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/R_Layout"></RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.quickcoding01.QuickCoding01">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Values:"
+        android:id="@+id/array"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:width="600dp"
+        android:height="50dp"
+        android:textSize="35dp"
+        android:textColor="#040303" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Minimum"
+        android:id="@+id/minimum"
+        android:width="250dp"
+        android:height="100dp"
+        android:textColor="#080808"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Average"
+        android:id="@+id/average"
+        android:width="250dp"
+        android:height="100dp"
+        android:textSize="30dp"
+        android:textColor="#080808"
+        android:layout_above="@+id/result"
+        android:layout_alignRight="@+id/show"
+        android:layout_alignEnd="@+id/show" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Result:"
+        android:id="@+id/result"
+        android:layout_below="@+id/minimum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="107dp"
+        android:width="250dp"
+        android:height="40dp"
+        android:textColor="#080808"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".  .  ."
+        android:id="@+id/update"
+        android:width="250dp"
+        android:height="40dp"
+        android:textColor="#080808"
+        android:textSize="35dp"
+        android:layout_alignTop="@+id/result"
+        android:layout_toRightOf="@+id/result"
+        android:layout_toEndOf="@+id/result" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numbers."
+        android:id="@+id/numbers"
+        android:width="500dp"
+        android:layout_below="@+id/array"
+        android:layout_alignRight="@+id/array"
+        android:layout_alignEnd="@+id/array"
+        android:textSize="45dp"
+        android:textColor="#de1717" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show numbers."
+        android:id="@+id/show"
+        android:width="400dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/numbers"
+        android:layout_alignRight="@+id/array"
+        android:layout_alignEnd="@+id/array" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lay"></RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present Location"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35dp"
+            android:textColor="#1d1af3" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_below="@+id/Present"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#eb1d1d"
+            android:textSize="30dp" />
+
+        <TextView
+            android:text="..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saved"
+            android:layout_below="@+id/start_end"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="28dp"
+            android:textColor="#1f09c1" />
+
+        <ToggleButton
+            android:id="@+id/start_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Start"
+            android:textOn="Finish"
+            android:layout_below="@+id/Present"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="230dp"
+            android:textSize="40dp" />
+    </RelativeLayout>
+</ScrollView>
