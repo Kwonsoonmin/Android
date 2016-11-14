@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/mylocation" />
             <option value="$PROJECT_DIR$/quickcoding01" />
             <option value="$PROJECT_DIR$/quickcoding02" />
+            <option value="$PROJECT_DIR$/quickcoding03" />
+            <option value="$PROJECT_DIR$/quickcoding04" />
           </set>
         </option>
         <option name="myModules">
@@ -24,6 +26,8 @@
             <option value="$PROJECT_DIR$/mylocation" />
             <option value="$PROJECT_DIR$/quickcoding01" />
             <option value="$PROJECT_DIR$/quickcoding02" />
+            <option value="$PROJECT_DIR$/quickcoding03" />
+            <option value="$PROJECT_DIR$/quickcoding04" />
           </set>
         </option>
       </GradleProjectSettings>
