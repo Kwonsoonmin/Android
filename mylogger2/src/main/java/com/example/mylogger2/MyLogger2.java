@@ -126,13 +126,6 @@ public class MyLogger2 extends AppCompatActivity implements TMapGpsManager.onLoc
     }
 
     public void addpoint(double lat, double longi) {
-        /*mappoint_linked.add(new MapPoint("집",37.658037, 127.121374));
-        mappoint_linked.add(new MapPoint("고려대역",37.590631, 127.035848));
-        mappoint_linked.add(new MapPoint("국민대 7호관",37.610223, 126.997127));
-        mappoint_linked.add(new MapPoint("길음역",37.603440, 127.024935));
-        mappoint_linked.add(new MapPoint("노원 서가앤쿡",37.655830, 127.062353));
-        mappoint_linked.add(new MapPoint("노원 롯데백화점",37.655253, 127.061151));
-        mappoint_linked.add(new MapPoint("당고개역", 37.670506, 127.079032));*/
         mappoint_linked.add(new MapPoint("Record info about here",lat, longi));
     }
 
