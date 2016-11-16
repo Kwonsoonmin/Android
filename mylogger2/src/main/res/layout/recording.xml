@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place: "
+        android:id="@+id/place"
+        android:textColor="#040303"
+        android:textSize="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event: "
+        android:id="@+id/event"
+        android:textColor="#040303"
+        android:textSize="50dp"
+        android:layout_below="@+id/record_pla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="137dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/record_pla"
+        android:textColor="#0c0c0c"
+        android:width="320dp"
+        android:textSize="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/place"
+        android:layout_toEndOf="@+id/place" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/record_eve"
+        android:textColor="#0c0c0c"
+        android:width="280dp"
+        android:textSize="35dp"
+        android:layout_alignBottom="@+id/event"
+        android:layout_alignLeft="@+id/record_pla"
+        android:layout_alignStart="@+id/record_pla"
+        android:layout_alignRight="@+id/record_pla"
+        android:layout_alignEnd="@+id/record_pla" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/send"
+        android:textSize="50dp"
+        android:textColor="#13298a"
+        android:width="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: "
+        android:id="@+id/latitude"
+        android:textColor="#040303"
+        android:textSize="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/latitude_r"
+        android:textColor="#0c0c0c"
+        android:width="280dp"
+        android:textSize="35dp"
+        android:layout_alignBottom="@+id/latitude"
+        android:layout_toRightOf="@+id/latitude"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: "
+        android:id="@+id/longitude"
+        android:textColor="#040303"
+        android:textSize="50dp"
+        android:layout_marginTop="122dp"
+        android:layout_below="@+id/latitude"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/longitude_r"
+        android:textColor="#0c0c0c"
+        android:width="280dp"
+        android:textSize="35dp"
+        android:layout_alignBottom="@+id/longitude"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/longitude" />
+
+</RelativeLayout>

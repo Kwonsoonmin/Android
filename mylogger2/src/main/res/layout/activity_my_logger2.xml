@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="755dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="643dp"
+        android:layout_height="50dp"
+        android:orientation = "horizontal"
+        android:weightSum="1">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text = "Statistic"
+            android:id = "@+id/statistic"
+            android:layout_weight="0.26"
+            android:textSize="28dp"
+            android:textColor="#0b278b" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marker"
+            android:id="@+id/marker"
+            android:layout_weight="0.26"
+            android:textSize="28dp"
+            android:textColor="#e3302a" />
+    </LinearLayout>
+
+</LinearLayout>
