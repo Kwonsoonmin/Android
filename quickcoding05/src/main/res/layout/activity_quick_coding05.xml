@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.quickcoding05.QuickCoding05">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity: "
+        android:id="@+id/gravity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#0e0c0c"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/gravity_x"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignBottom="@+id/gravity"
+        android:layout_toRightOf="@+id/gravity"
+        android:layout_toEndOf="@+id/gravity"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:id="@+id/gravity_y"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/gravity_x"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:id="@+id/gravity_z"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_alignTop="@+id/gravity_y"
+        android:layout_toRightOf="@+id/gravity_y"
+        android:layout_toEndOf="@+id/gravity_y" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelero: "
+        android:id="@+id/accelero"
+        android:textColor="#0e0c0c"
+        android:textSize="35dp"
+        android:layout_below="@+id/gravity_x"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="94dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear Accel: "
+        android:id="@+id/linear"
+        android:textColor="#0e0c0c"
+        android:textSize="35dp"
+        android:layout_below="@+id/accelero"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="99dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyro: "
+        android:id="@+id/gyro"
+        android:textColor="#0e0c0c"
+        android:textSize="35dp"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="97dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/accelero_x"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/accelero"
+        android:layout_alignLeft="@+id/gravity_x"
+        android:layout_alignStart="@+id/gravity_x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/linear_x"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/linear"
+        android:layout_alignLeft="@+id/gravity_y"
+        android:layout_alignStart="@+id/gravity_y" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/gyro_x"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/gyro"
+        android:layout_toRightOf="@+id/gravity"
+        android:layout_toEndOf="@+id/gravity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:id="@+id/accelero_y"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/accelero_x"
+        android:layout_alignLeft="@+id/linear_x"
+        android:layout_alignStart="@+id/linear_x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:id="@+id/linear_y"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/linear_x"
+        android:layout_alignLeft="@+id/gravity_z"
+        android:layout_alignStart="@+id/gravity_z" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:id="@+id/gyro_y"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/gyro_x"
+        android:layout_alignLeft="@+id/accelero_x"
+        android:layout_alignStart="@+id/accelero_x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:id="@+id/accelero_z"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/accelero_y"
+        android:layout_alignLeft="@+id/linear_y"
+        android:layout_alignStart="@+id/linear_y" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:id="@+id/linear_z"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_alignTop="@+id/linear_y"
+        android:layout_toRightOf="@+id/linear_y"
+        android:layout_toEndOf="@+id/linear_y" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:id="@+id/gyro_z"
+        android:textColor="#19129b"
+        android:textSize="33dp"
+        android:layout_alignTop="@+id/gyro_y"
+        android:layout_alignLeft="@+id/linear_x"
+        android:layout_alignStart="@+id/linear_x" />
+
+</RelativeLayout>
